@@ -61,7 +61,7 @@ namespace RazorDemoPageApp.Pages.Employees
             {
                 dbContext.Employees.Remove(existingEmployee);
                 dbContext.SaveChanges();
-                return RedirectToPage("Employees/List");
+                return RedirectToPage("/Employees/List");
             }
             return Page();
         }

@@ -1,7 +1,7 @@
 ﻿@page "{id:Guid}"
 @model RazorDemoPageApp.Pages.Employees.EditModel
 @{
-    var message = ViewData["Message"].ToString();
+    var message = ViewData["Message"]?.ToString();
 }
 
 <form method="post">
@@ -9,7 +9,7 @@
     <h1 class="mb-3"> Edit Employee</h1>
     @if (!string.IsNullOrWhiteSpace(message))
     {
-        <div class="alert alert-sucess" role="alert">
+        <div class="alert alert-success" role="alert">
             @message
         </div>
     }
