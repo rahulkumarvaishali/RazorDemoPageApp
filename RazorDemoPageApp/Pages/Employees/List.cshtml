@@ -1,0 +1,36 @@
+﻿@page
+@model RazorDemoPageApp.Pages.Employees.ListModel
+@{
+}
+
+<h1 class="mb-3">List of Employess</h1>
+@if (Model.Employees != null && Model.Employees.Any())
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Buttion</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var employe in Model.Employees)
+            {
+                <tr>
+                    <td>@employe.Id</td>
+                    <td>@employe.Name</td>
+                    <td>@employe.Email</td>
+                    <td>
+                        <a href="/Employees/Edit/@employe.Id" class="btn btn-dark">Edit</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+
+}
