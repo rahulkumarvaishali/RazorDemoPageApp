@@ -27,6 +27,7 @@ namespace RazorDemoPageApp.Pages.Employees
                     Id = employee.Id,
                     Name = employee.Name,
                     Email = employee.Email,
+                    Mobile = employee.Mobile,
                     DateOfBirth = employee.DateOfBirth,
                     Salary = employee.Salary,
                     Department = employee.Department
@@ -44,6 +45,7 @@ namespace RazorDemoPageApp.Pages.Employees
 
                     existingEmployee.Name = EditEmployeeViewModel.Name;
                     existingEmployee.Email = EditEmployeeViewModel.Email;
+                    existingEmployee.Mobile = EditEmployeeViewModel.Mobile;
                     existingEmployee.DateOfBirth = EditEmployeeViewModel.DateOfBirth;
                     existingEmployee.Salary = EditEmployeeViewModel.Salary;
                     existingEmployee.Department = EditEmployeeViewModel.Department;

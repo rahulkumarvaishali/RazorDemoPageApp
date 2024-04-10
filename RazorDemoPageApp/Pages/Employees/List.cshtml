@@ -1,5 +1,8 @@
 ﻿@page
 @model RazorDemoPageApp.Pages.Employees.ListModel
+@{
+    ViewData["Title"] = "Employee Detail page";
+}
 
 <div class="mb-3 d-flex justify-content-between">
     <h1 class="mb-3">List of Employees</h1>
@@ -16,6 +19,10 @@
                 <th>Id</th>
                 <th>Name</th>
                 <th>Email</th>
+                <th>Salary</th>
+                <th>Date of Birth</th>
+                <th>Department</th>
+                <th>Mobile</th>
                 <th>Action</th>
             </tr>
         </thead>
@@ -26,6 +33,10 @@
                     <td>@employee.Id</td>
                     <td>@employee.Name</td>
                     <td>@employee.Email</td>
+                    <td>@employee.Salary</td>
+                    <td>@employee.DateOfBirth</td>
+                    <td>@employee.Department</td>
+                    <td>@employee.Mobile</td>
                     <td>
                         <a href="/Employees/Edit/@employee.Id" class="btn btn-dark">Edit</a>
                     </td>

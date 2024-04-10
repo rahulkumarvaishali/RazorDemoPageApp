@@ -1,0 +1,52 @@
+﻿@page
+@model RazorDemoPageApp.Pages.Employees.PrimeNumberModel
+@{
+    var message = ViewData["Message"] as string;
+    ViewData["Title"] = "Some Math Action";
+}
+
+<form method="post" id="primeNumberForm">
+    @if (!string.IsNullOrEmpty(message))
+    {
+        <div class="alert alert-success" role="alert">
+            <p>@Html.Raw(message)</p>
+        </div>
+    }
+    <div class="mb-3">
+        <label class="form-label">Enter First Number</label>
+        <input type="text" class="form-control" asp-for="PrimeNumber.FirstNumber" />
+        <span asp-validation-for="PrimeNumber.FirstNumber" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Enter Second Number</label>
+        <input type="text" class="form-control" asp-for="PrimeNumber.SecondNumber" />
+        <span asp-validation-for="PrimeNumber.SecondNumber" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3 d-flex justify-content-between">
+        <div class="mb-3">
+            <button type="submit" class="btn btn-primary btn-add" asp-page-handler="Add">Add</button>
+        </div>
+        <div class="mb-3">
+            <button type="submit" class="btn btn-primary btn-prime" asp-page-handler="Prime">Prime Number</button>
+        </div>
+        <div class="mb-3">
+            <button type="submit" class="btn btn-primary btn-whole" asp-page-handler="Whole">Whole Number</button>
+        </div>
+        <div class="mb-3">
+            <button type="submit" class="btn btn-primary btn-factor" asp-page-handler="Factor">Factorial</button>
+        </div>
+        <div class="mb-3">
+            <button type="submit" class="btn btn-primary btn-factor" asp-page-handler="Square">Square</button>
+        </div>
+        <div class="mb-3">
+            <button type="submit" class="btn btn-primary btn-factor" asp-page-handler="PoewrofTwo">PoewrofTwo</button>
+        </div>
+    </div>
+
+</form>
+
+@section Scripts {
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.12/jquery.validate.unobtrusive.min.js"></script>
+}

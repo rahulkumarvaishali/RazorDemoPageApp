@@ -1,5 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.Extensions.Logging;
+using RazorDemoPageApp.Models.Domain;
 
 namespace RazorDemoPageApp.Pages
 {
@@ -14,7 +16,8 @@ namespace RazorDemoPageApp.Pages
 
         public void OnGet()
         {
-
+            // Initialization logic for GET requests can be added here if needed.
         }
+        
     }
 }

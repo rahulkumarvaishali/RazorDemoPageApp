@@ -28,6 +28,7 @@ namespace RazorDemoPageApp.Pages.Employees
             {
                 Name = AddEmployeeRequest.Name,
                 Email = AddEmployeeRequest.Email,
+                Mobile = AddEmployeeRequest.Mobile,
                 Salary = AddEmployeeRequest.Salary,
                 DateOfBirth = AddEmployeeRequest.DateOfBirth,
                 Department = AddEmployeeRequest.Department
