@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using RazorDemoPageApp.Data;
 
@@ -11,9 +12,11 @@ using RazorDemoPageApp.Data;
 namespace RazorDemoPageApp.Migrations
 {
     [DbContext(typeof(RazorpageDemoDbContext))]
-    partial class RazorpageDemoDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240414000419_MessageFromWeb")]
+    partial class MessageFromWeb
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

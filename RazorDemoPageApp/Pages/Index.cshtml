@@ -1,7 +1,360 @@
 ﻿@page
 @model IndexModel
 @{
+    Layout = null;
     ViewData["Title"] = "Home page";
+    var message = ViewData["Message"]?.ToString();
+
 }
+
+
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title> Creative Personal Website Template | Smarteyeapps.com</title>
+
+    <link rel="shortcut icon" href="assets/images/fav.jpg">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/fontawsom-all.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+</head>
+
+<body>
+    <div class="container-fluid overcover">
+        <div class="container profile-box">
+            <div class="head-top row">
+                <ul>
+                    <li class="act"><a href="#about">About</a></li>
+                    <li class="pro"><a href="#profile">Profile</a></li>
+                    <li class="res"><a href="#resume">Resume</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+            <div id="about" class="home row">
+                <div class="image-box">
+                    <img src="~/assets/images/gallery/rahul_kumar_pic.jpg" alt="">
+
+                    <a href="https://twitter.com/rahulkumarvasli"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.facebook.com/rahulkumarvaishalii"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/rahulkumarvaishali"><i class="fab fa-instagram"></i></a>
+                    <a href="https://github.com/rahulkumarvaishali"><i class="fab fa-github"></i></a>
+                    <a href="https://www.youtube.com/%40rahulkumarvaishali"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.linkedin.com/in/rahulkumarvaishali"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="basic-detail row">
+                <div class="col-md-8 detail-col">
+                    <h2>Rahul kumar</h2>
+                    <p>"Passionate .NET developer with 1.5 years of hands-on experience, driven to excel in a dynamic environment. Seeking a stimulating role within a reputable organization where I can further cultivate my skills, contribute innovative solutions, and propel my career forward in the realm of software development.</p>
+                    <div class="btn-cover">
+                        <button class="btn btn-success">View my Works</button>
+                        <button class="btn btn-success">Contact Me</button>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <section id="profile" class="home-dat">
+                <div class="row no-margin home-det">
+
+                    <div class="col-md-12 home-dat">
+
+                        <div class="links">
+                            <div class="row ">
+                                <div class="col-xl-6 col-md-12">
+                                    <ul class="btn-link">
+                                        <li>
+                                            <a href="mailto:rahulrk00297@gmail.com?subject=Hiring Inquiry"><i class="fas fa-paper-plane"></i> Hire Me</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="~/resume/rahul kumar cv.pdf" download><i class="fas fa-cloud-download-alt"></i> Download Resume</a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                                <div class="col-xl-6 col-md-12">
+                                    <ul class="social-link">
+                                        <li><a href="https://www.facebook.com/rahulkumarvaishalii"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="https://twitter.com/rahulkumarvasli"><i class="fab fa-twitter"></i></a></li>
+                                        <li><a href="https://www.instagram.com/rahulkumarvaishali"><i class="fab fa-instagram"></i></a></li>
+                                        <li><a href="https://github.com/rahulkumarvaishali"><i class="fab fa-github"></i></a></li>
+                                        <li><a href="https://www.linkedin.com/in/rahulkumarvaishali"><i class="fab fa-linkedin-in"></i></li></a>
+                                        <li><a href="https://www.youtube.com/%40rahulkumarvaishali"><i class="fab fa-youtube"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="jumbo-address">
+                            <div class="row no-margin">
+                                <div class="col-lg-6 no-padding">
+
+                                    <table class="addrss-list">
+                                        <tbody>
+                                            <tr>
+                                                <th>Position</th>
+                                                <td>Dotnet Developer</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Mobile No</th>
+                                                <td>+91 75450 12441</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Nationality</th>
+                                                <td>Indian</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Date of birth</th>
+                                                <td>07-05-1998</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                </div>
+                                <div class="col-lg-6 no-padding">
+                                    <table class="addrss-list">
+                                        <tbody>
+                                            <tr>
+                                                <th>Experiance</th>
+                                                <td>1.5+ Years</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Email Address</th>
+                                                <td>rahulrk00297@gmail.com</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Website</th>
+                                                <td>http://rahulkumarvaishali.somee.com</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Languages</th>
+                                                <td>English, Hindi, Bhojpuri</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="experience" class="education-detail">
+                <div class="sec-title">
+                    <h2>Experience</h2>
+                </div>
+                <div class="service no-margin row">
+                    <div class="col-sm-3 resume-dat serv-logo">
+                        <h6>2022-Now</h6>
+                        <p>Dotnet Developer</p>
+                    </div>
+                    <div class="col-sm-9 rgbf">
+                        <h5><a href="https://algofolks.com">Algofolks Private Limited</a></h5>
+                        <p>As a Dotnet Developer at Algofolks Private Limited, I've built robust web apps using ASP.NET, C#, and related tech. I analyze requirements, design, code, and test to ensure functionality. Experienced in Dotnet frameworks, collaboration, and staying updated with industry trends. Proficient in tools like Visual Studio, SQL Server, and Git, ensuring smooth project execution.</p>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <section id="resume" class="education-detail">
+                <div class="sec-title">
+                    <h2>Education Details</h2>
+                </div>
+                <div class="service no-margin row">
+                    <div class="col-sm-3 resume-dat serv-logo">
+                        <h6>2020-2022</h6>
+                        <p>Master's Degree</p>
+                    </div>
+                    <div class="col-sm-9 rgbf">
+                        <h5>Dr. A. P. J. Abdul Kalam Technical University, Lucknow</h5>
+                        <p>Completed MCA from Dr. A. P. J. Abdul Kalam Technical University, Lucknow. Equipped with strong analytical and problem-solving skills, ready to contribute to software development challenges.</p>
+                    </div>
+                </div>
+                <div class="service no-margin row">
+                    <div class="col-sm-3 resume-dat serv-logo">
+                        <h6>2016-2019</h6>
+                        <p>Bachelor's Degree</p>
+                    </div>
+                    <div class="col-sm-9 rgbf">
+                        <h5>Babasaheb Bhimrao Ambedkar Bihar University, Muzaffarpur</h5>
+                        <p>Obtained a Bachelor of Computer Applications (BCA) degree from Babasaheb Bhimrao Ambedkar Bihar University, Muzaffarpur. Equipped with a strong foundation in computer science, I am prepared to tackle complex challenges in the field.</p>
+                    </div>
+                </div>
+                <div class="service no-margin row">
+                    <div class="col-sm-3 resume-dat serv-logo">
+                        <h6>2014-2016</h6>
+                        <p>Intermediate</p>
+                    </div>
+                    <div class="col-sm-9 rgbf">
+                        <h5>R.D.S. College, Muzaffarpur</h5>
+                        <p>Completed Intermediate in Science with a focus on Mathematics from R.D.S. College, Muzaffarpur. This educational experience has strengthened my analytical and problem-solving abilities, laying a solid foundation for my academic and professional journey.</p>
+                    </div>
+                </div>
+                <div class="service no-margin row">
+                    <div class="col-sm-3 resume-dat serv-logo">
+                        <h6>2014</h6>
+                        <p>Matriculation</p>
+                    </div>
+                    <div class="col-sm-9 rgbf">
+                        <h5>S.R. High School, Belwar-Chochahan</h5>
+                        <p>Completed Matriculation from S.R. High School, Belwar-Chochahan. This formative educational experience instilled in me a strong academic foundation and a disciplined approach towards learning, laying the groundwork for my future endeavors.</p>
+                    </div>
+                </div>
+            </section>
+
+
+            <section id="services" class="profile-tab">
+                <div class="sec-title">
+                    <h2>Services</h2>
+                </div>
+                <div class="row service-ro no-margin">
+                    <div class="col-lg-4 col-md-6 singe-servic">
+                        <i class="fab fa-chrome"></i>
+                        <h4>Web Applications</h4>
+                        <p>Various technologies like ASP.NET Web Forms, MVC, Web API, and Razor Pages enable building dynamic web solutions.</p>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 singe-servic">
+                        <i class="fas fa-desktop"></i>
+                        <h4>Desktop Applications</h4>
+                        <p>Desktop apps can be built with Windows Forms, offering rich client experiences for Windows platforms.</p>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 singe-servic">
+                        <i class="fas fa-cloud"></i>
+                        <h4>Cloud Applications</h4>
+                        <p>Cloud apps on platforms like Azure utilize services such as Functions and Virtual Machines for scalable solutions.</p>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 singe-servic">
+                        <i class="fas fa-database"></i>
+                        <h4>Data Access</h4>
+                        <p>Data access is facilitated through technologies like Entity Framework, ADO.NET, and LINQ to SQL.</p>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 singe-servic">
+                        <i class="fab fa-angular"></i>
+                        <h4>Angular</h4>
+                        <p>Angular offers a structured approach to dynamic web app development with features like two-way data binding and modular architecture.</p>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 singe-servic">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h4>Ionic Development</h4>
+                        <p>Ionic facilitates cross-platform mobile app development using web technologies, providing a streamlined process and high-quality outcomes.</p>
+                    </div>
+
+                </div>
+            </section>
+
+
+            <div id="portfolio" class="portfolio-detail">
+                <div class="row no-margin gallery">
+                    <div class="col-sm-4">
+                        <img src="assets/images/gallery/gallery_01.jpg" alt="">
+                    </div>
+                    <div class="col-sm-4">
+                        <img src="assets/images/gallery/gallery_02.jpg" alt="">
+                    </div>
+                    <div class="col-sm-4">
+                        <img src="assets/images/gallery/gallery_03.jpg" alt="">
+                    </div>
+                    <div class="col-sm-4">
+                        <img src="assets/images/gallery/gallery_04.jpg" alt="">
+                    </div>
+                    <div class="col-sm-4">
+                        <img src="assets/images/gallery/gallery_05.jpg" alt="">
+                    </div>
+                    <div class="col-sm-4">
+                        <img src="assets/images/gallery/gallery_06.jpg" alt="">
+                    </div>
+                    <div class="col-sm-4">
+                        <img src="assets/images/gallery/gallery_10.jpg" alt="">
+                    </div>
+                    <div class="col-sm-4">
+                        <img src="assets/images/gallery/gallery_08.jpg" alt="">
+                    </div>
+                    <div class="col-sm-4">
+                        <img src="assets/images/gallery/gallery_09.jpg" alt="">
+                    </div>
+
+                </div>
+            </div>
+
+
+            <section id="contact" class="contact-tab">
+                <div class="row no-margin">
+                    <div class="col-md-6 no-padding">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.0108774997483!2d77.3588929144037!3d28.605206982413175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce479670d2e4f%3A0x891a0c43209b630b!2sSector%2059%2C%20Noida%2C%20Uttar%20Pradesh%20201301%2C%20India!5e0!3m2!1sen!2sin!4v1649887439604" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+
+                    <div class="col-md-6">
+                        <form method="post">
+                            <div class="row cont-row no-margin">
+                                <div class="col-sm-6">
+                                    <input name="FullName" placeholder="Enter Full Name" type="text" class="form-control form-control-sm">
+                                </div>
+                                <div class="col-sm-6">
+                                    <input name="EmailAddress" placeholder="Enter Email Address" type="text" class="form-control form-control-sm">
+                                </div>
+                            </div>
+                            <div class="row cont-row no-margin">
+                                <div class="col-sm-6">
+                                    <input name="MobileNumber" placeholder="Enter Mobile Number" type="text" class="form-control form-control-sm">
+                                </div>
+                            </div>
+                            <div class="row cont-row no-margin">
+                                <div class="col-sm-12">
+                                    <textarea name="Message" placeholder="Enter your Message" class="form-control form-control-sm" rows="10"></textarea>
+                                </div>
+                            </div>
+                            <div class="row cont-row no-margin">
+                                <div class="col-sm-6">
+                                    <button type="submit" class="btn btn-sm btn-success">Send Message</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+
+        </div>
+    </div>
+</body>
+<script src="~/assets/js/bootstrap.min.js"></script>
+<script src="~/assets/js/jquery-3.2.1.min.js"></script>
+<script src="~/assets/js/popper.js"></script>
+<script src="~/assets/js/popper.min.js"></script>
+<script src="~/assets/js/script.js"></script>
+<script>
+    // Yeh function toaster notification show karta hai
+    function showToaster(!string.IsNullOrWhiteSpace(@message)) {
+        // Toastify library se toaster notification create karein
+        Toastify({
+            text: message,
+            duration: 3000, // Notification ka duration (milliseconds mein)
+            gravity: "bottom", // Position of notification
+            position: 'right', // Notification ka position
+            backgroundColor: "linear-gradient(to right, #00b09b, #96c93d)", // Notification ka background color
+        }).showToast(); // Notification ko show karein
+    }
+
+    // Razor page se ViewData ka value fetch karke toaster notification show karna
+    var message = "@ViewData["Message"]";
+    if (message) {
+        showToaster(message);
+    }
+</script>
+</html>
 
 

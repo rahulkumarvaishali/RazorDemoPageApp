@@ -9,5 +9,6 @@ namespace RazorDemoPageApp.Data
         {
         }
         public DbSet<Employee> Employees { get; set; }
+        public DbSet<MessageFromWeb> MessageFromWebs { get; set; }
     }
 }
